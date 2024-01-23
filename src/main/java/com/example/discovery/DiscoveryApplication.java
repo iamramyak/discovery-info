@@ -12,4 +12,16 @@ public class DiscoveryApplication {
 		SpringApplication.run(DiscoveryApplication.class, args);
 	}
 
+
+//	@Override
+//	public void report(FailureAnalysis failureAnalysis) {
+//		Logger logger;
+//		if (logger.isDebugEnabled()) {
+//			logger.debug("Application failed to start due to an exception",
+//					failureAnalysis.getCause());
+//		}
+//		if (logger.isErrorEnabled()) {
+//			logger.error(buildMessage(failureAnalysis));
+//		}
+//	}
 }

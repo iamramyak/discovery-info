@@ -8,3 +8,12 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 server:
   port: 8081
+conductor:
+  grpc-server:
+    enabled=false:
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      import: "optional:configserver:"
+spring.config.import: "optional:configserver:"
